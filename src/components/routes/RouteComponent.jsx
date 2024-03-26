@@ -14,6 +14,10 @@ export default function RouteComponent (){
         <Routes>
             <Route path="/" element= {<Home />}/>
             <Route path="/journals" element={<Journals />}/>
+            <Route path="/journalsshow/:id" element={<Show/>}/>
+            <Route path="/journals/new" element={<New/>}/>
+            <Route path="/journals/:id/edit" element={<Edit />}/>
+
         </Routes>
 
     )
