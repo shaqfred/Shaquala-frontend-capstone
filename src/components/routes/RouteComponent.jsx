@@ -17,6 +17,10 @@ export default function RouteComponent (){
             <Route path="/journalsshow/:id" element={<Show/>}/>
             <Route path="/journals/new" element={<New/>}/>
             <Route path="/journals/:id/edit" element={<Edit />}/>
+            <Route path="/journals/not-found" element={<Error />}/>
+            <Route path="/journals/about" element={<About/>}/>
+            <Route path="*" element={<Navigate to ="/journals/not-found"/>}/>
+            <Route path="/journals/scrap" element={<Navigate to = "/journals/:id/edit"/>}/>
 
         </Routes>
 
