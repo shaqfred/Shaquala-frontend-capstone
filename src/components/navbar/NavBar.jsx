@@ -6,8 +6,15 @@ function NavBar (){
         <nav className="navBar">
             <div>
                 <Link className="nav-link"to={"/"}>Home</Link>
+
                 <Link className="nav-link"to={"/journals"}>All Journals</Link>
-                <Link className="nav-link"to={"/journals/new"}>Add a Journal</Link>
+
+                <Link className="nav-link"to={"/journals/new"}>Add A Journal</Link>
+
+                <Link className="nav-link"to={"/journals/:id/edit"}>Edit A Journal</Link>
+                
+                <Link className="nav-link"to={"/journals/:id/delete"}>Delete A Journal</Link>
+
             </div>
         </nav>
     )

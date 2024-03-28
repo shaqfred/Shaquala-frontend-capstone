@@ -3,38 +3,39 @@ import { useEffect, useState } from "react";
  import axios from "axios"
  import { Link } from "react-router-dom";
 
+
 const API = import.meta.env.VITE_APP_API_URL
 
-export default function JournalsIndex(){
+export default function Journals(){
 
 
 
-    const [allJournals, setAllJournal]= useState([])
+    const [allJournals, setAllJournals]= useState([])
 
 
     function getAllJournals(){
-        axios.get(`${API}/journals`)
-        .then(response=> setAllJournal(response.data))
+        axios.get(`${API}/journalss`)
+        .then(response=> setAllJournals(response.data))
         .catch(error => console.log(error))
     }
     useEffect(()=>{
         getAllJournals()
     
     },[])
-    console.log(allJournals)
+     
     return(
-        <div className="JournalsIndex">
-            <h1> Journals-Index</h1>
+        <div className="journals">
+            <h1> Journal-Index</h1>
             <h2>Browse Journals</h2>
             {
                 allJournals.map((journalsObj)=>{
                     return(
                         <Link to={`/journals/${journalsObj.id}`}>
                             <div className="card">
-                                <h3>{journalsObj.journalEntry}</h3>
+                                <h3>{journalsObj.journal_entry}</h3>
                             </div>
-                            <span>{journalsObj.journalMood}</span>
-                            <span>{journalsObj.journalAffirmation}</span>
+                            <span>{journalsObj.journal_mood}</span>
+                            <span>{journalsObj.journal_affirmation}</span>
                             
                         </Link>
                     )

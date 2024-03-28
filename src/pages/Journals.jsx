@@ -1,12 +1,12 @@
 import React from "react";
-import JournalsIndex from "../components/journalsIndex/JournalsIndex";
+import Journals from "../components/journalsIndex/Journals.jsx"
 
-function Journals(){
+function Journal(){
     return(
         <div>
-            <JournalsIndex/>
-            <h1>Journals-Index-Page</h1>
+            <Journals/>
+     
         </div>
     )
 }
-export default Journals
+export default Journal
