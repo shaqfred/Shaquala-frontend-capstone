@@ -11,10 +11,7 @@ function NavBar (){
 
                 <Link className="nav-link"to={"/journals/new"}>Add A Journal</Link>
 
-                <Link className="nav-link"to={"/journals/:id/edit"}>Edit A Journal</Link>
                 
-                <Link className="nav-link"to={"/journals/:id/delete"}>Delete A Journal</Link>
-
             </div>
         </nav>
     )

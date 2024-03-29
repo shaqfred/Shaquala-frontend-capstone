@@ -6,20 +6,20 @@ import { useEffect, useState } from "react";
 
 const API = import.meta.env.VITE_APP_API_URL
 
-export default function Journals(){
+export default function journals(){
 
 
 
     const [allJournals, setAllJournals]= useState([])
 
 
-    function getAllJournals(){
+    function getAlljournals(){
         axios.get(`${API}/journalss`)
         .then(response=> setAllJournals(response.data))
         .catch(error => console.log(error))
     }
     useEffect(()=>{
-        getAllJournals()
+        getAlljournals()
     
     },[])
      
