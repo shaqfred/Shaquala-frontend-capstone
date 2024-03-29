@@ -6,12 +6,9 @@ function NavBar (){
         <nav className="navBar">
             <div>
                 <Link className="nav-link"to={"/"}>Home</Link>
-
                 <Link className="nav-link"to={"/journals"}>All Journals</Link>
-
                 <Link className="nav-link"to={"/journals/new"}>Add A Journal</Link>
 
-                
             </div>
         </nav>
     )

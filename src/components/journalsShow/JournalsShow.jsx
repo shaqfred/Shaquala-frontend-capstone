@@ -14,11 +14,11 @@ export default function journalsShow(){
 
     const {id} = useParams()
 
-
+    const navigate =useNavigate()
 
     function handleDelete (){
         axios.delete(`${API}/journalss/${id}`)
-        .then (response => Navigate(`/journals`))
+        .then (response => navigate(`/journals`))
         .catch (error => console.log (error))
     }
 
@@ -30,8 +30,14 @@ export default function journalsShow(){
     },[id])
 
     return(
-        <div>
-            <h1>Journals Show Page</h1>
+        <div className="journalsShow">
+            <h2>{journalDetails.journal_entry}</h2>
+            <span>{journalDetails.journal_mood}</span>
+            <span>{journalDetails.journal_affirmations}</span>
+
+            <span className="journalsShow_buttons">
+                <Link to={`/journals/${id}/edit`}>Edit</Link></span> 
+                <button onClick={()=> handleDelete()}>Delete</button>          
         </div>
     )
 }
