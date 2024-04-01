@@ -15,13 +15,9 @@ const API = import.meta.env.VITE_APP_API_URL
     })
     
     function handleTextChange (event){
-       
-
         const id = event.target.id;
         const value = event.target.value
-
-
-        setForm ({
+       setForm ({
               
             journal_entry: form.journal_entry,
             journal_mood: form.journal_mood,
@@ -31,7 +27,8 @@ const API = import.meta.env.VITE_APP_API_URL
         }
     )
         
-    }}
+    }
+    
     function handleSubmit(event){
         event.preventDefault()
 
@@ -41,20 +38,8 @@ const API = import.meta.env.VITE_APP_API_URL
     .then(response => navigate(`/journals/${response.data}`))
     .catch(err=> console.log(err))
        
-      
+    } 
     
-
- 
-
-// useEffect(()=>{
-//     axios.get(`${API}/journalss/${id}`)
-//     .then(response=> setForm(response.data.id))
-//     .catch(err=> console.log(err))
-// },[id])
-
-    
-    
-
 return(
     
 <form className='new-form'
