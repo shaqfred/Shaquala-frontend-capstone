@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import {   useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import axios from "axios"
 
 export default function NewForm() {
@@ -10,29 +10,30 @@ const API = import.meta.env.VITE_APP_API_URL
  const [form, setForm] = useState({
         journal_entry: "",
         journal_mood: "",
-        journal_affirmation: ""
-        
+        journal_affirmation: "",
+          
     })
+    const navigate= useNavigate()
     
     function handleTextChange (event){
         const id = event.target.id;
         const value = event.target.value
-       setForm ({
-              
-            journal_entry: form.journal_entry,
-            journal_mood: form.journal_mood,
-            journal_affirmation: form.journal_affirmation,
+      
+        setForm ({
+             journal_entry: form.journal_entry,
+             journal_mood: form.journal_mood,
+             journal_affirmation: form.journal_affirmation,
              [id]: value            
         
         }
     )
         
     }
-    
+
     function handleSubmit(event){
         event.preventDefault()
 
-        const navigate= useNavigate()
+       
 
     axios.post(`${API}/journalss/`,form)
     .then(response => navigate(`/journals/${response.data}`))
@@ -44,9 +45,11 @@ return(
     
 <form className='new-form'
      
-      onSubmit={handleSubmit}>
+     onSubmit={(event)=> handleSubmit(event)}>
         <h1>New Journal</h1>
-            <label> journal_entry:
+            <label> 
+                
+                journal_entry:
                 <input
                 type="text"
                 id="number"
@@ -54,12 +57,14 @@ return(
                 onChange={(event)=> handleTextChange(event)}
                 />
             </label>
-            <select>journal_mood:
-                <input
+            <label>
+                journal_mood:
+            <select>
+                {/* <input
                 type="text"
                 id="number"
                 value={form.journal_mood}
-                onChange={(event)=>handleTextChange(event)}/>
+                onChange={(event)=>handleTextChange(event)}/> */}
                 <option value="">-- Choose--</option>
             <option value="happy">Happy</option>
             <option value="sad">Sad</option>
@@ -73,7 +78,9 @@ return(
             <option value="nervous">Nervous</option>
              
             </select>
-            <label>journal_affirmation:
+            </label>
+            <label>
+                journal_affirmation:
                 <input
                 type="text"
                 id="number"
@@ -81,14 +88,20 @@ return(
                 onChange={(event)=>handleTextChange(event)}/>
             </label>
 
-           <div className='form-button-container'>
+           {/* <div className='form-button-container'>
             <button type='submit'className='form-button'>Submit</button>
-           </div>
-           
+             */}
+           {/* </div> */}
+          
+           <input
+          
+           type="submit"
+            value="New Journal"/>
             
         </form>
     
     
      
 
-)}
+)
+}
