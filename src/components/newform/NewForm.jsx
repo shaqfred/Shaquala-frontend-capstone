@@ -18,12 +18,10 @@ const API = import.meta.env.VITE_APP_API_URL
     function handleTextChange (event){
         const id = event.target.id;
         const value = event.target.value
-      
+      console.log(value,id,form)
         setForm ({
-             journal_entry: form.journal_entry,
-             journal_mood: form.journal_mood,
-             journal_affirmation: form.journal_affirmation,
-             [id]: value            
+             ...form,
+             [event.target.id]: value         
         
         }
     )
@@ -36,7 +34,7 @@ const API = import.meta.env.VITE_APP_API_URL
        
 
     axios.post(`${API}/journalss/`,form)
-    .then(response => navigate(`/journals/${response.data}`))
+    .then(response => navigate(`/journals/${response.data.id}`))
     .catch(err=> console.log(err))
        
     } 
@@ -45,26 +43,29 @@ return(
     
 <form className='new-form'
      
-     onSubmit={(event)=> handleSubmit(event)}>
+      onSubmit={ handleSubmit}
+     >
         <h1>New Journal</h1>
             <label> 
                 
                 journal_entry:
                 <input
                 type="text"
-                id="number"
+                id="journal_entry"
                 value={form.journal_entry}
                 onChange={(event)=> handleTextChange(event)}
                 />
             </label>
             <label>
                 journal_mood:
-            <select>
+            <select id= "journal_mood"
+            onChange={(event)=> handleTextChange(event)}
+            >
                 {/* <input
                 type="text"
                 id="number"
                 value={form.journal_mood}
-                onChange={(event)=>handleTextChange(event)}/> */}
+                 onChange={(event)=>handleTextChange(event)}/> */}
                 <option value="">-- Choose--</option>
             <option value="happy">Happy</option>
             <option value="sad">Sad</option>
@@ -83,7 +84,7 @@ return(
                 journal_affirmation:
                 <input
                 type="text"
-                id="number"
+                id="journal_affirmation"
                 value={form.journal_affirmation}
                 onChange={(event)=>handleTextChange(event)}/>
             </label>

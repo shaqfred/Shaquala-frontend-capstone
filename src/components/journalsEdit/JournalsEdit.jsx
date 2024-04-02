@@ -13,6 +13,8 @@ export default function EditForm() {
         journal_affirmation: ""
         
     })
+    const  navigate = useNavigate()
+    
     function handleTextInput (event){
         const id = event.target.id;
         const value = event.target.value
@@ -37,7 +39,7 @@ useEffect(()=>{
     .catch(err=> console.log(err))
 },[id])
 
-const  navigate = useNavigate()
+
 
 function handleSubmit(event){
     event.preventDefault()
