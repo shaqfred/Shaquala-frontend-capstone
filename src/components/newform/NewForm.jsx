@@ -58,7 +58,7 @@ return(
             </label>
             <label>
                 journal_mood:
-            <select id= "journal_mood"
+            <select id="journal_mood" 
             onChange={(event)=> handleTextChange(event)}
             >
                 {/* <input
