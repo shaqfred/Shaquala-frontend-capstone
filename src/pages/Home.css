@@ -1,1 +1,54 @@
+  
+    
+
+
  
+
+
+
+body{
+    font-size: large;
+
+    background-color:blanchedalmond;
+    justify-content: center;
+
+   
+}
+
+
+ 
+  
+  
+  
+  
+  /* Style labels */
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style input fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Style the submit button on hover */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
