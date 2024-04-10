@@ -1,27 +1,17 @@
   
-    
-
-
- 
-
-
-
 body{
     font-size: large;
-
     background-color:blanchedalmond;
     justify-content: center;
+    
 
    
 }
+h1,h2,h3{
+  text-align: center;
+}
 
-
- 
-  
-  
-  
-  
-  /* Style labels */
+ /* Style labels */
   label {
     display: block;
     font-weight: bold;
@@ -38,10 +28,10 @@ body{
   
   /* Style the submit button */
   button[type="submit"] {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border:brown;
     border-radius: 3px;
     font-size: 18px;
     cursor: pointer;
@@ -51,4 +41,5 @@ body{
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
+  
   

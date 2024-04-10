@@ -89,15 +89,15 @@ return(
                 onChange={(event)=>handleTextChange(event)}/>
             </label>
 
-           {/* <div className='form-button-container'>
-            <button type='submit'className='form-button'>Submit</button>
-             */}
-           {/* </div> */}
+           <div className='form-button-container'>
+            <button type='submit' className='form-button'>New Journal</button>
+             
+           </div>
           
-           <input
+           {/* <input
           
            type="submit"
-            value="New Journal"/>
+            value="New Journal"/> */}
             
         </form>
     

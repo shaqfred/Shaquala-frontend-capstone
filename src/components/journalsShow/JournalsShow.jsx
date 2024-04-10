@@ -37,7 +37,8 @@ export default function journalsShow(){
 
             <span className="journalsShow_buttons">
                 <Link to={`/journals/${id}/edit`}>Edit</Link></span> 
-                <button onClick={()=> handleDelete()}>Delete</button>          
+                <button onClick={()=> handleDelete()}>Delete</button> 
+                         
         </div>
     )
 }

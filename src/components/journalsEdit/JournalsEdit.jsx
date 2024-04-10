@@ -76,13 +76,16 @@ function handleSubmit(event){
                 value={editForm.journal_affirmation}
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
-
+            <div className='editForm-button-container'>
+            <button type='submit' className='editForm-button'>Edit Changes</button>
+             
+           </div>
             
-                <input
+                {/* <input
             
             type="submit"
             value="Edit Changes"/>
-            
+             */}
 
             
         </form>
