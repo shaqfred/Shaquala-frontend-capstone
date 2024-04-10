@@ -1,11 +1,13 @@
-  
+
+  .text-transparent
+  {color:rgba(255, 255,255,0.5);
+  }
 body{
     font-size: large;
     background-color:blanchedalmond;
     justify-content: center;
-    
-
-   
+    background-image: url(https://i.pinimg.com/originals/3a/b6/57/3ab6576b5743acd7c0947c38be05cbf7.jpg);
+    background-size: cover;
 }
 h1,h2,h3{
   text-align: center;
@@ -41,5 +43,8 @@ h1,h2,h3{
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  .img{
+    width: 200px;
+    height: auto;
+  }
   
