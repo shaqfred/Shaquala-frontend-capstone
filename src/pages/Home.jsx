@@ -7,11 +7,11 @@ function Home(){
 
 
         <div className="home" >
-            <p className="text-transparent">
+            {/* <p className="text-transparent"> */}
             <h1> Welcome to Journalfly</h1>
-            <h1>"Self-Awareness, Self-Checkin, Self-Care</h1>
-            {/* <h2>and all in your pocket"</h2> */}
-            </p>
+            <h1>"Self-Awareness, Self-Check in, Self-Care"</h1>
+              
+            {/* </p> */}
         </div>
     )
 }
