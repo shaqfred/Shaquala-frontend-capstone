@@ -8,7 +8,7 @@ function ErrorPage(){
     return(
         <div>
             <Error/>
-            <h1>Error Page</h1>
+           
         </div>
     )
 }

@@ -25,8 +25,8 @@ export default function journals(){
      
     return(
         <div className="journals">
-            <h1> Journal-Index</h1>
-            <h2>Browse Journals</h2>
+            
+            <h2>Browse Entries</h2>
             {
                 allJournals.map((journalsObj)=>{
                     return(

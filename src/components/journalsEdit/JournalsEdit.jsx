@@ -56,7 +56,7 @@ function handleSubmit(event){
         onSubmit={(event)=> handleSubmit(event)}>
             <label> journal_entry:
                 <input
-                type="text"
+                type="text area"
                 id="journal_entry"
                 value={editForm.journal_entry}
                 onChange={(event)=> handleTextInput(event)}
@@ -81,11 +81,7 @@ function handleSubmit(event){
              
            </div>
             
-                {/* <input
-            
-            type="submit"
-            value="Edit Changes"/>
-             */}
+                
 
             
         </form>
