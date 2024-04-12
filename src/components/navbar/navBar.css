@@ -1,26 +1,17 @@
-.navbar {
-    text-align: center;
-    border-bottom: solid (173, 173, 173);
-    
-    
+.navBar {
+  display:flex;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: chocolate;
+  
   }
   
+  .navBar div {
+  display:flex;
+  flex-direction:column;
+  }
+  .navBar img{
+    height: 80px;
+
+  }
   
-  .nav-link {
-    display: grid;
-    flex-direction: row;
-     background-color:rgb(251, 167, 65) ;
-    text-align:right;
-    padding-right: 1px; height: fit-content;
-    margin-right:1px;
-    font-size:20px;
-    font-weight: 200;
-    border-bottom: brown;
-    
-  }
-  .nav-background{
-    background-image: url(https://trello.com/1/cards/65f92e9190ad46baa763a9a9/attachments/65f92f3085bd4df25f395459/previews/65f92f3085bd4df25f3954eb/download/image.png)
-    ;
-    background-size: 100px;
-    margin-left: 30px;
-  }

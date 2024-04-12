@@ -50,7 +50,7 @@ return(
                 
                 journal_entry:
                 <input
-                type="text"
+                type="text area"
                 id="journal_entry"
                 value={form.journal_entry}
                 onChange={(event)=> handleTextChange(event)}
