@@ -22,7 +22,7 @@ export default function About() {
           <div className="container text-center">
             <div className="row">
               <div className="col">
-                <div className="card bg-danger" style={{ width: "18rem" }}>
+                <div className="card blue" style={{ width: "18rem" }}>
                   <div className="card-body">
                     <img
                       src="https://avatars.githubusercontent.com/u/96317236?s=400&u=7de1096a1fe94de1a0ef52ade4c2827826e4bffc&v=4"

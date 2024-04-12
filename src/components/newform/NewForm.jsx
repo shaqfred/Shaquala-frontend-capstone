@@ -11,7 +11,7 @@ const API = import.meta.env.VITE_APP_API_URL
         journal_entry: "",
         journal_mood: "",
         journal_affirmation: "",
-        date:"",
+        entry_date:"",
           
     })
     const navigate= useNavigate()
@@ -89,6 +89,16 @@ return(
                 value={form.journal_affirmation}
                 onChange={(event)=>handleTextChange(event)}/>
             </label>
+            <label>
+                entry_date:
+                <input
+                type='date'
+                id='entry_date'
+                value={form.entry_date}
+                onChange={(event)=>handleTextChange(event)}/>
+            </label>
+
+           
 
            <div className='form-button-container'>
             <button type='submit' className='form-button'>New Entry</button>

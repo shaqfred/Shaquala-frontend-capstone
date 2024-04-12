@@ -10,7 +10,8 @@ export default function EditForm() {
     const [editForm, setEditForm] = useState({
         journal_entry: "",
         journal_mood: "",
-        journal_affirmation: ""
+        journal_affirmation: "",
+        entry_date:""
         
     })
     const  navigate = useNavigate()
@@ -24,6 +25,7 @@ export default function EditForm() {
          journal_entry: editForm.journal_entry,
          journal_mood: editForm.journal_mood,
          journal_affirmation: editForm.journal_affirmation,
+         entry_date: editForm.entry_date,
         [id]: value 
 
               })
@@ -74,6 +76,13 @@ function handleSubmit(event){
                 type="text"
                 id="journal_affirmation"
                 value={editForm.journal_affirmation}
+                onChange={(event)=>handleTextInput(event)}/>
+            </label>
+            <label>entry_date:
+                <input
+                type='date'
+                id='entry_date'
+                value={editForm.entry_date}
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
             <div className='editForm-button-container'>
