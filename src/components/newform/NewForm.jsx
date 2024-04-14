@@ -114,8 +114,8 @@ onSubmit={handleSubmit}>
 <label>
 
 Entry:   
-<textarea 
-type="textarea" 
+<textarea
+ 
 id="journal_entry" 
 value={form.journal_entry} 
 onChange={(e)=>handleTextChange(e)}/>
