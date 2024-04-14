@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, } from 'react';
 import {useNavigate} from 'react-router-dom';
 import axios from "axios"
 import "./NewForm.css"
@@ -10,6 +10,7 @@ export default function NewForm() {
 const API = import.meta.env.VITE_APP_API_URL
 const [mood, setMood] = useState('');
 const [affirmation, setAffirmation] = useState('');
+
 
  const [form, setForm] = useState({
     
@@ -114,7 +115,7 @@ onSubmit={handleSubmit}>
 
 Entry:   
 <textarea 
-type="text" 
+type="textarea" 
 id="journal_entry" 
 value={form.journal_entry} 
 onChange={(e)=>handleTextChange(e)}/>
@@ -125,13 +126,14 @@ onChange={(e)=>handleTextChange(e)}/>
                <label>
                 Affirmation:
                 <input
-                type="text"
+                
                 id="journal_affirmation"
                 value={form.journal_affirmation}
-               
+                
                 onChange={(e)=>handleTextChange(e)}/>
                  {affirmation && <p>Affirmation: {affirmation}</p>} 
-                  
+                
+                
             </label>  
             
 

@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
  import axios from "axios"
  import { Link } from "react-router-dom";
+ import "../journalsIndex/journals.css"
+
 
 
 const API = import.meta.env.VITE_APP_API_URL

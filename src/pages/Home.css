@@ -1,16 +1,14 @@
 
-  /* .text-transparent
-  {color:rgba(255, 255,255,0.5);
-  } */
+  
 .home{
-    font-size:x-large;
+    font-size:xx-large;
     background-color:#0a9ddc;
     justify-content: center;
     font-weight:bolder;
     font-family:serif;
     
   background-image:url(https://wallpapercave.com/wp/wp5518760.jpg);
-   background-size: cover ;
+  
    color: rgb(251, 251, 253);
 
 } 
