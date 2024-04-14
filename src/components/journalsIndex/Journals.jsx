@@ -34,10 +34,11 @@ export default function journals(){
                     return(
                         <Link to={`/journals/${journalsObj.id}`}>
                             <div className='card'>
-                                <h3>{journalsObj.journal_entry}</h3>
+                                {/* <h3>{journalsObj.journal_entry}</h3> */}
                            
-                            <span>{journalsObj.journal_mood}</span>
-                            <span>{journalsObj.journal_affirmation}</span>
+                            <h3>{journalsObj.journal_mood}</h3>
+                            <h4>{journalsObj.entry_date}</h4>
+                            {/* <span>{journalsObj.journal_affirmation}</span> */}
                             </div> 
                         </Link>
                     )

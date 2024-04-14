@@ -1,6 +1,6 @@
 .card
      {    width: 300px;   
-        background-color: #309af8;    
+        background-color: #0b4d87;    
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
         border-radius: 8px;    
         margin: 14px;    
@@ -9,7 +9,7 @@
 
        }
 
-        .card h2
+        .card h1,h2
         {    font-size: 20px;   
              margin-bottom: 10px;
             

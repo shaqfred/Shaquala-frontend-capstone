@@ -2,15 +2,16 @@
   display:flex;
   width: 100vw;
   justify-content: space-between;
-  background-color:rgb(30, 138, 210);
-  color: rgb(11, 11, 116);
+  background-color:rgb(17, 94, 148);
+  color: rgba(5, 5, 36, 0.955);
 }
   .navBar div {
-  display:flex;
-  flex-direction:column;
+  display:grid;
+  flex-direction: column;
   }
   .navBar img{
     height: 150px;
+    width: 300px;
 
   }
   .nav {    

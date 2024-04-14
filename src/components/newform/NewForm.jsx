@@ -61,15 +61,18 @@ const [affirmation, setAffirmation] = useState('');
                  // Add more affirmations for different moods
         };
         const randomAffirmation = affirmations[mood][Math.floor(Math.random() * affirmations[mood].length)];
-        setAffirmation(randomAffirmation);
+        window.alert(`${randomAffirmation}`)
+        // setAffirmation(randomAffirmation);
+
+        axios.post(`${API}/journalss/`,form)
+        .then(response => navigate(`/journals/${response.data.id}`))
+        .catch(err=> console.log(err))
+           
     };
 
     
 
-    axios.post(`${API}/journalss/`,form)
-    .then(response => navigate(`/journals/${response.data.id}`))
-    .catch(err=> console.log(err))
-       
+   
  
 
 return(
@@ -79,7 +82,7 @@ return(
 onSubmit={handleSubmit}>
      
      
-        <h2>New Entry</h2>
+       
             
             
             <label>
@@ -120,21 +123,22 @@ id="journal_entry"
 value={form.journal_entry} 
 onChange={(e)=>handleTextChange(e)}/>
 </label>
+<label>Date:
+    <input
+    id="entry_date" 
+    value={form.entry_date}
+    onChange={(e)=>handleTextChange(e)}/>
 
+   
+</label>
         
             
-               <label>
-                Affirmation:
-                <input
-                
-                id="journal_affirmation"
-                value={form.journal_affirmation}
-                
-                onChange={(e)=>handleTextChange(e)}/>
+               
+               
                  {affirmation && <p>Affirmation: {affirmation}</p>} 
                 
                 
-            </label>  
+          
             
 
 

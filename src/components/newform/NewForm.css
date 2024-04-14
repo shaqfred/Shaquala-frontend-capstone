@@ -5,13 +5,15 @@
     padding: 0;
     }
 
-    .card {    width: 300px;   
-         background-color: #309af8;    
+    .card {    width: 50px;  
+     
+         background-color: #bed8ef;    
          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
          border-radius: 8px;    
          margin: auto;    
          padding: 20px;
          justify-content: center;
+         display: grid;
 
         }
 

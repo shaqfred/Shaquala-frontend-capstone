@@ -1,6 +1,6 @@
 
   
-.home{
+.home {
     font-size:xx-large;
     background-color:#0a9ddc;
     justify-content: center;
@@ -12,6 +12,14 @@
    color: rgb(251, 251, 253);
 
 } 
+.home h2{
+  width: 70%;
+  background-color: #0057b369;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  font-size:xx-large;
+}
   
     
     
