@@ -54,7 +54,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form
+        <form className='card'
         onSubmit={(event)=> handleSubmit(event)}>
             <label> journal_entry:
                 <input

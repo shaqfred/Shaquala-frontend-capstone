@@ -4,7 +4,7 @@ import React from "react"
 
 export default function About() {
     const projectBio =
-      "This project was built by a single web developer named Shaquala Fredericks. I used a React framework called vite@4, full crud, to create a journaling application that allows the user to create, delete, update and save a journal entry based on the mood they are in while receiving a poitive affirmation afterwards";
+      "This project was built by a single web developer named Shaquala Fredericks. I used a React framework called vite@4, full crud, to create a journaling application that allows the user to create, delete, update and save a journal entry based on the mood they are in while receiving a positive affirmation afterwards";
   
     const shaqFredBio =
       "Shaquala is a cat lover. She loves God and has 2 beautiful daughters who brings her joy. She strives for greatness and want to pay it forward so that others may have opportunities to fulfill their dreams. ";
@@ -18,7 +18,7 @@ export default function About() {
             <h2 className="text-body-emphasis fw-bold">About the Project</h2>
             <p>{projectBio}</p>
           </div>
-          <h2 className="text-body-emphasis fw-bold">About the Developers</h2>
+          <h2 className="text-body-emphasis fw-bold">About the Developer</h2>
           <div className="container text-center">
             <div className="row">
               <div className="col">

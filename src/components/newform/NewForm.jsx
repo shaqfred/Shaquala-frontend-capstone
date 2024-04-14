@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
 import axios from "axios"
+import "./NewForm.css"
 
 export default function NewForm() {
 
@@ -37,14 +38,19 @@ const API = import.meta.env.VITE_APP_API_URL
     axios.post(`${API}/journalss/`,form)
     .then(response => navigate(`/journals/${response.data.id}`))
     .catch(err=> console.log(err))
-       
-    } 
-    
+    }    
+    // <div className="container mt-5"></div>
+    // <div className='row'></div>
+    // <div className='col-md-6 offset-md-3'></div>
+    // <div className='card'></div>
+    // <div className='card-header'></div>
+  
 return(
     
-<form className='new-form'
+<form className='card'
      
       onSubmit={ handleSubmit}
+     
      >
         <h2>New Entry</h2>
             <label> 
@@ -52,7 +58,7 @@ return(
                 journal_entry:
                 <input
                 type="text area"
-                id="journal_entry"
+                id="journal_entry"rows ="5"
                 value={form.journal_entry}
                 onChange={(event)=> handleTextChange(event)}
                 />
