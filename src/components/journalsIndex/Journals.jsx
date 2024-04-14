@@ -33,12 +33,12 @@ export default function journals(){
                 allJournals.map((journalsObj)=>{
                     return(
                         <Link to={`/journals/${journalsObj.id}`}>
-                            <div className="card">
+                            <div className='card'>
                                 <h3>{journalsObj.journal_entry}</h3>
-                            </div>
+                           
                             <span>{journalsObj.journal_mood}</span>
                             <span>{journalsObj.journal_affirmation}</span>
-                            
+                            </div> 
                         </Link>
                     )
                 })
