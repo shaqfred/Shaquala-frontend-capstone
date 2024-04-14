@@ -30,7 +30,7 @@ export default function journalsShow(){
     },[id])
 
     return(
-        <div className="journalsShow">
+        <div className="card">
             <h2>{journalDetails.journal_entry}</h2>
             <span>{journalDetails.journal_mood}</span>
             <span>{journalDetails.journal_affirmations}</span>

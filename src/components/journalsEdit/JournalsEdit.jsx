@@ -11,7 +11,7 @@ export default function EditForm() {
         journal_entry: "",
         journal_mood: "",
         journal_affirmation: "",
-        entry_date:""
+        
         
     })
     const  navigate = useNavigate()
@@ -25,7 +25,7 @@ export default function EditForm() {
          journal_entry: editForm.journal_entry,
          journal_mood: editForm.journal_mood,
          journal_affirmation: editForm.journal_affirmation,
-         entry_date: editForm.entry_date,
+
         [id]: value 
 
               })
@@ -56,35 +56,29 @@ function handleSubmit(event){
     return (
         <form className='card'
         onSubmit={(event)=> handleSubmit(event)}>
-            <label> journal_entry:
+            <label> Entry:
                 <input
-                type="text area"
+                type="textarea"
                 id="journal_entry"
                 value={editForm.journal_entry}
                 onChange={(event)=> handleTextInput(event)}
                 />
             </label>
-            <label>journal_mood:
+            <label>Mood:
                 <input
                 type="text"
                 id="journal_mood"
                 value={editForm.journal_mood}
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
-            <label>journal_affirmation:
+            <label>Affirmation:
                 <input
                 type="text"
                 id="journal_affirmation"
                 value={editForm.journal_affirmation}
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
-            <label>entry_date:
-                <input
-                type='date'
-                id='entry_date'
-                value={editForm.entry_date}
-                onChange={(event)=>handleTextInput(event)}/>
-            </label>
+            
             <div className='editForm-button-container'>
             <button type='submit' className='editForm-button'>Edit Changes</button>
              

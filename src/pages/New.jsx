@@ -4,7 +4,7 @@ import NewForm from "../components/newform/NewForm";
 function New(){
     return(
         <div>
-            
+        
             <NewForm/>
         </div>
     )

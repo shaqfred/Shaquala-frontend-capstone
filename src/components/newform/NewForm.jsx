@@ -4,69 +4,87 @@ import {useNavigate} from 'react-router-dom';
 import axios from "axios"
 import "./NewForm.css"
 
+
 export default function NewForm() {
 
 const API = import.meta.env.VITE_APP_API_URL
+const [mood, setMood] = useState('');
+const [affirmation, setAffirmation] = useState('');
 
  const [form, setForm] = useState({
+    
         journal_entry: "",
         journal_mood: "",
         journal_affirmation: "",
-        entry_date:"",
-          
-    })
+        entry_date: "",
+        })
+            
+            
+        
     const navigate= useNavigate()
     
-    function handleTextChange (event){
-        const id = event.target.id;
-        const value = event.target.value
+    function handleTextChange (e){
+        const id = e.target.id;
+        const value = e.target.value
       console.log(value,id,form)
         setForm ({
              ...form,
-             [event.target.id]: value         
+             [e.target.id]: value         
         
         }
-    )
-        
+        )
+    }   
+    
+    const handleMoodChange = (e) => {
+        setMood (e.target.value);
+    
     }
+    function handleSubmit(e){
+        e.preventDefault()
 
-    function handleSubmit(event){
-        event.preventDefault()
+        const affirmations = {
+            happy: ['I am joyful and grateful.', 'I radiate positivity and light.'],
+            sad: ['I embrace my emotions with kindness.', 'I choose to find peace within.'],
+            nonchalant: ['I nourish myself with kind words, and joyful foods.'],
+            angry:['I do not have to linger in dark places; there is help for me here'],
+            cringed: ['I am worthy of investing in myself'],
+            surprised: ['I look forward to tomorrow and the opportunities that await me.'],
+            overwhelmed: ['My life is not a race or a competition.'],
+            great: ['Everything happens in my favor to all situations in life'],
+            nervous: ['I am worthy and I know that it will get better.'],
+            awesome: ['I have a beautiful and peaceful home.'],
+            sick:['My body is worthy of being cared for and adorned in beautiful garments.'],
+            relieved: ['My body is beutiful in this present moment and at its current size.'],
+            relaxed: ['It feels good to know I am loved and I feel loved.'],
+            
+                 // Add more affirmations for different moods
+        };
+        const randomAffirmation = affirmations[mood][Math.floor(Math.random() * affirmations[mood].length)];
+        setAffirmation(randomAffirmation);
+    };
 
-       
+    
 
     axios.post(`${API}/journalss/`,form)
     .then(response => navigate(`/journals/${response.data.id}`))
     .catch(err=> console.log(err))
-    }    
-    // <div className="container mt-5"></div>
-    // <div className='row'></div>
-    // <div className='col-md-6 offset-md-3'></div>
-    // <div className='card'></div>
-    // <div className='card-header'></div>
-  
+       
+ 
+
 return(
-    
+    <div>
 <form className='card'
+
+onSubmit={handleSubmit}>
      
-      onSubmit={ handleSubmit}
      
-     >
         <h2>New Entry</h2>
-            <label> 
-                
-                journal_entry:
-                <input
-                type="text area"
-                id="journal_entry"rows ="5"
-                value={form.journal_entry}
-                onChange={(event)=> handleTextChange(event)}
-                />
-            </label>
+            
+            
             <label>
-                journal_mood:
+            Mood:
             <select id="journal_mood" 
-            onChange={(event)=> handleTextChange(event)}
+            onChange={(e)=> handleMoodChange(e)}
             >
                 {/* <input
                 type="text"
@@ -84,27 +102,39 @@ return(
             <option value="great">Great</option>
             <option value="awesome">Awesome</option>
             <option value="nervous">Nervous</option>
-             
+            <option value="sick">Sick</option>
+            <option value="relieved">Relieved</option> 
+            <option value="confused">Confused</option>
             </select>
             </label>
-            <label>
-                journal_affirmation:
+           
+
+      
+<label>
+
+Entry:   
+<textarea 
+type="text" 
+id="journal_entry" 
+value={form.journal_entry} 
+onChange={(e)=>handleTextChange(e)}/>
+</label>
+
+        
+            
+               <label>
+                Affirmation:
                 <input
                 type="text"
                 id="journal_affirmation"
                 value={form.journal_affirmation}
-                onChange={(event)=>handleTextChange(event)}/>
-            </label>
-            <label>
-                entry_date:
-                <input
-                type='date'
-                id='entry_date'
-                value={form.entry_date}
-                onChange={(event)=>handleTextChange(event)}/>
-            </label>
+               
+                onChange={(e)=>handleTextChange(e)}/>
+                 {affirmation && <p>Affirmation: {affirmation}</p>} 
+                  
+            </label>  
+            
 
-           
 
            <div className='form-button-container'>
             <button type='submit' className='form-button'>New Entry</button>
@@ -117,9 +147,9 @@ return(
             value="New Journal"/> */}
             
         </form>
-    
-    
-     
 
+
+  </div> 
+    
 )
-}
+        }               

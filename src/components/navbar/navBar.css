@@ -2,19 +2,17 @@
   display:flex;
   width: 100vw;
   justify-content: space-between;
-  background-color: rgb(30, 138, 210);
-  
-  }
-  
+  background-color:rgb(30, 138, 210);
+  color: rgb(11, 11, 116);
+}
   .navBar div {
   display:flex;
   flex-direction:column;
   }
   .navBar img{
-    height: 80px;
+    height: 109px;
 
   }
-  body {    
-    font-family: Arial, sans-serif;   
-     background-color: #f8f8f8;    margin: 0;    padding: 0;}
-  
+  .nav {    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }

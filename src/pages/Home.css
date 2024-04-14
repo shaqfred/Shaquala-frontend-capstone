@@ -2,22 +2,23 @@
   /* .text-transparent
   {color:rgba(255, 255,255,0.5);
   } */
-body{
-    font-size: large;
-    background-color:#ffebcd;
+.home{
+    font-size:x-large;
+    background-color:#0a9ddc;
     justify-content: center;
     font-weight:bolder;
     font-family:serif;
     
-    background-image:url(https://cdn1.photostockeditor.com/h/1512/person-person-standing-in-front-of-mountain-landscape-photography-nature-nature-image.jpg);
+  background-image:url(https://wallpapercave.com/wp/wp5518760.jpg);
    background-size: cover ;
+   color: rgb(251, 251, 253);
 
-    
+} 
   
     
     
    
-}
+
 h1{
   text-align: center;
 }
@@ -61,4 +62,6 @@ h2{
     height: auto;
   }
   
-  
+  .home{
+    background-color: rgb(2, 85, 85);
+  }
