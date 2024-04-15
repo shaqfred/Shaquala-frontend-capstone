@@ -1,11 +1,14 @@
-.card
-     {    width: 300px;   
-        background-color: #0b4d87;    
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+.card-column
+     {    width: 700px;   
+        background-color: #169ca0;    
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     */
         border-radius: 8px;    
-        margin: 14px;    
-        padding: 20px;
-        justify-content: center;
+        margin: auto;    
+        justify-content:center;
+        display: grid;
+        flex: 4;
+        border: 5px solid #ccc;
+        padding: 40px;
 
        }
 
@@ -17,3 +20,7 @@
         .card p {    
            font-size: 14px;    
            margin-bottom: 10px;}
+           
+           .journalsShow_buttons{
+            background: rgba(45, 45, 246, 0.774);
+           }

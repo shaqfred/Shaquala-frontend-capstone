@@ -1,0 +1,27 @@
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.search-bar
+    input[type="date"],
+
+.search-bar
+select{
+    padding:5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.search-bar button{
+    background-color: #007bff;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    background-color: #0056b3;
+}
+

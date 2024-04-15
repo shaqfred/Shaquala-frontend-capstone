@@ -1,15 +1,19 @@
-.card {    width: 300px;   
-    background-color: #1267b2;    
-    box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);    
+.card-column {    width: 500px;   
+    background-color: #12afb2;    
+    /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
     border-radius: 8px;    
     margin: auto;    
-    padding: 20px;
+    
     justify-content: center;
-    color:aliceblue
-
+    color: rgb(193, 218, 240);;
+    display: flex ;
+   
+      flex: 3px;
+      padding: 50px;
+      border: 1px solid #ccc;
    }
 
-    .card h2 
+    .card h2,h3 
     {    font-size: 20px;   
          margin-bottom: 10px;
         
@@ -17,3 +21,6 @@
     .card p {    
        font-size: 14px;    
        margin-bottom: 10px;}
+       .card button{
+         color: black;
+       }

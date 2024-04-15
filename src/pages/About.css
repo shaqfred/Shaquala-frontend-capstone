@@ -3,8 +3,17 @@ body{
     background-size:auto;
     color:rgb(1, 8, 14);
     font-size: x-large;
+    justify-content: center;
+    
    
 }
 .btn btn-primary{
     color: rgb(2, 2, 85);
+     margin: auto;
+    padding: 0; 
+}
+card-body{
+    justify-content: center;
+    
+
 }

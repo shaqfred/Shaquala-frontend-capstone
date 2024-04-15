@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
  import axios from "axios"
  import { Link } from "react-router-dom";
  import "../journalsIndex/journals.css"
+ import Search from "../searchEntries/Search";
 
 
 
@@ -26,18 +27,19 @@ export default function journals(){
     },[])
      
     return(
-        <div className="journals">
+        <div className="column">
             
-            <h2>Browse Entries</h2>
+            <Search/> 
+            <h1>Browse Entries</h1>
             {
                 allJournals.map((journalsObj)=>{
                     return(
                         <Link to={`/journals/${journalsObj.id}`}>
-                            <div className='card'>
-                                {/* <h3>{journalsObj.journal_entry}</h3> */}
+                            <div className='card-column'>
+                                {/* <>{journalsObj.journal_entry}</> */}
                            
-                            <h3>{journalsObj.journal_mood}</h3>
-                            <h4>{journalsObj.entry_date}</h4>
+                            <h2>{journalsObj.journal_mood}</h2>
+                            <h3>{journalsObj.entry_date}</h3>
                             {/* <span>{journalsObj.journal_affirmation}</span> */}
                             </div> 
                         </Link>

@@ -77,7 +77,7 @@ const [affirmation, setAffirmation] = useState('');
 
 return(
     <div>
-<form className='card'
+<form className='card-column'
 
 onSubmit={handleSubmit}>
      
@@ -123,14 +123,14 @@ id="journal_entry"
 value={form.journal_entry} 
 onChange={(e)=>handleTextChange(e)}/>
 </label>
-<label>Date:
+{/* <label>Date:
     <input
     id="entry_date" 
     value={form.entry_date}
     onChange={(e)=>handleTextChange(e)}/>
 
    
-</label>
+</label> */}
         
             
                

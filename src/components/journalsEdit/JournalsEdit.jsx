@@ -2,6 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { useParams , useNavigate} from 'react-router-dom';
 import axios from "axios"
+import Search from '../searchEntries/Search';
 
 
 const API = import.meta.env.VITE_APP_API_URL
@@ -10,7 +11,7 @@ export default function EditForm() {
     const [editForm, setEditForm] = useState({
         journal_entry: "",
         journal_mood: "",
-        journal_affirmation: "",
+        // journal_affirmation: "",
         
         
     })
@@ -54,7 +55,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form className='card'
+        <form className='card-column'
         onSubmit={(event)=> handleSubmit(event)}>
             <label> Entry:
                 <input
@@ -64,13 +65,13 @@ function handleSubmit(event){
                 onChange={(event)=> handleTextInput(event)}
                 />
             </label>
-            <label>Mood:
+             <label>Mood:
                 <input
                 type="text"
                 id="journal_mood"
                 value={editForm.journal_mood}
                 onChange={(event)=>handleTextInput(event)}/>
-            </label>
+            </label> 
             {/* <label>Affirmation:
                 <input
                 type="text"
@@ -78,13 +79,13 @@ function handleSubmit(event){
                 value={editForm.journal_affirmation}
                 onChange={(event)=>handleTextInput(event)}/>
             </label> */}
-            
+              
             <div className='editForm-button-container'>
             <button type='submit' className='editForm-button'>Edit Changes</button>
              
            </div>
             
-                
+            
 
             
         </form>
