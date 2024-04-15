@@ -34,14 +34,14 @@ export default function journalsShow(){
     return(
         <div className='card-column'>
           <h1>{journalDetails.journal_mood}</h1>
-            {/* <h2>{journalDetails.journal_entry}</h2> */}
-            <h2>{journalDetails.entry_date}</h2>
+            <h2>{journalDetails.journal_entry}</h2>
+            <h3>{journalDetails.entry_date}</h3>
           {/* <span>{journalDetails.journal_affirmations}</span> */}
 
 
            
 
-            <span className="journalsShow_buttons">
+            <span className="button">
                 <button onClick={()=> navigate(`/journals/${id}/edit`)}>Edit</button></span> 
                 <button onClick={()=> handleDelete()}>Delete</button> 
                          

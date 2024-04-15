@@ -1,15 +1,18 @@
 .card-column {    width: 500px;   
-    background-color: #12afb2;    
+    background: #12afb2;    
     /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
-    border-radius: 8px;    
-    margin: auto;    
-    
-    justify-content: center;
+    border: 8px;    
+    height: 180px;   
+    box-shadow: -10px 10px black;
+    margin-top: 20px;
+    justify-content: space-evenly;
     color: rgb(193, 218, 240);;
     display: flex ;
+    flex-direction: column;
    
-      flex: 3px;
-      padding: 50px;
+      flex: 1px;
+      margin-bottom: 10px;
+      padding: 10px;
       border: 1px solid #ccc;
    }
 

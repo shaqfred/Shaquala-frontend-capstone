@@ -1,0 +1,23 @@
+.card-column
+     {    width: 60%;   
+         background: #169ca0;     
+         box-shadow: -10px 10px black;      
+          display: flex;
+          height:fit-content;
+        
+        
+
+       
+        margin: 20px;
+        border: 1px solid #ccc;
+        
+     }
+     .button{
+     background: #007bff;
+      border: solid 1px black;
+      color:black;
+      width: 60px;
+      font-weight: lighter;
+
+
+     }
