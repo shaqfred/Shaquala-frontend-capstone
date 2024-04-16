@@ -135,7 +135,7 @@ onChange={(e)=>handleTextChange(e)}/>
             
                
                
-                 {affirmation && <p>Affirmation: {affirmation}</p>} 
+                 {affirmation && <p>Journalfly: {affirmation}</p>} 
                 
                 
           

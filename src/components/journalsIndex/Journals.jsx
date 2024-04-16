@@ -41,8 +41,8 @@ export default function journals(){
                             <div className='card-column'>
                                 {/* <>{journalsObj.journal_entry}</> */}
                                  
-                            <h2>{journalsObj.journal_mood}</h2>
-                            <h3>{journalsObj.entry_date}</h3>
+                            <div className="">Mood: {journalsObj.journal_mood}</div>
+                            <div className=""> Date: {journalsObj.entry_date}</div>
                             {/* <span>{journalsObj.journal_affirmation}</span> */}
                            
                             </div> 

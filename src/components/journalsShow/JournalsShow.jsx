@@ -36,10 +36,10 @@ export default function journalsShow(){
       
           <div className=""> Mood: {journalDetails.journal_mood}</div>
       
-            <div>{journalDetails.journal_entry}</div>
+            <div className=""> Entry: {journalDetails.journal_entry}</div>
             <div className="">
-Date:
-            <div>{journalDetails.entry_date}</div>
+
+            <div className=""> Date: {journalDetails.entry_date}</div>
             </div>
           {/* <span>{journalDetails.journal_affirmations}</span> */}
 
