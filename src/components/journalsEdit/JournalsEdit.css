@@ -1,9 +1,11 @@
 .card-column
-     {    width: 60%;   
+     {    width: 60%; 
+          
          background: #169ca0;     
          box-shadow: -10px 10px black;      
           display: flex;
-          height:fit-content;
+          height: 80px;
+
         
         
 
@@ -12,7 +14,7 @@
         border: 1px solid #ccc;
         
      }
-     .button{
+     /* button{
      background: #007bff;
       border: solid 1px black;
       color:black;
@@ -20,4 +22,4 @@
       font-weight: lighter;
 
 
-     }
+     } */

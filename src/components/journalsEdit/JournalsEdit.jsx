@@ -9,8 +9,8 @@ const API = import.meta.env.VITE_APP_API_URL
 
 export default function EditForm() {
     const [editForm, setEditForm] = useState({
-        journal_entry: "",
         journal_mood: "",
+        journal_entry: "",
          journal_affirmation: "",
         
         
@@ -57,14 +57,16 @@ function handleSubmit(event){
     return (
         <form className='card-column'
         onSubmit={(event)=> handleSubmit(event)}>
-            <label> Entry:
-                <input
+             <label>Entry:
+                <textarea
                 type="textarea"
                 id="journal_entry"
                 value={editForm.journal_entry}
                 onChange={(event)=> handleTextInput(event)}
                 />
             </label>
+
+           
              <label>Mood:
                 <input
                 type="text"
@@ -72,6 +74,7 @@ function handleSubmit(event){
                 value={editForm.journal_mood}
                 onChange={(event)=>handleTextInput(event)}/>
             </label> 
+           
             <label>Affirmation:
                 <input
                 type="text"

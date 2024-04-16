@@ -33,16 +33,21 @@ export default function journalsShow(){
 
     return(
         <div className='card-column'>
-          <h1>{journalDetails.journal_mood}</h1>
-            <h2>{journalDetails.journal_entry}</h2>
-            <h3>{journalDetails.entry_date}</h3>
+      
+          <div className=""> Mood: {journalDetails.journal_mood}</div>
+      
+            <div>{journalDetails.journal_entry}</div>
+            <div className="">
+Date:
+            <div>{journalDetails.entry_date}</div>
+            </div>
           {/* <span>{journalDetails.journal_affirmations}</span> */}
 
 
            
 
-            <span className="button">
-                <button onClick={()=> navigate(`/journals/${id}/edit`)}>Edit</button></span> 
+            <div className="button">
+                <button onClick={()=> navigate(`/journals/${id}/edit`)}>Edit</button></div> 
                 <button onClick={()=> handleDelete()}>Delete</button> 
                          
         </div>
