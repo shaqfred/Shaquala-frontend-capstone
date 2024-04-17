@@ -14,7 +14,7 @@
 } 
 .home h2{
   width: 70%;
-  background-color: #0057b369;
+  background-color: #0057b3;
   text-align: center;
   margin: 0 auto;
   padding: 5px;
@@ -68,6 +68,6 @@ h2{
     height: auto;
   }
   
-  .home{
+  /* .home{
     background-color: rgb(2, 85, 85);
-  }
+  } */

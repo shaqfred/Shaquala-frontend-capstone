@@ -2,22 +2,23 @@ import React,{ useState } from "react";
 import "../searchEntries/Search.css"
 
 function Search(){
-    const [entry_date, setEntry_Date] = useState('');
-    const [journal_mood, setJournal_Mood] = useState('');
+    const [entry_Date, setEntry_Date] = useState('');
+    const [journal_Mood, setJournal_Mood] = useState('');
 
     const handleSearch = ()=> {
-         console.log ('Selected entry_date:', entry_date);
-         console.log ('Selected journal_mood:', journal_mood);
+         console.log ('Selected entry_date:', entry_Date);
+         console.log ('Selected journal_mood:', journal_Mood);
     }
     return(
         <div className="search-bar">
             <input
             type="date"
             placeholder="Search by date"
-            value={entry_date.entry_date}
+            value={entry_Date.entry_date}
             onChange={(e)=>setEntry_Date(e.target.value)}/>
+            
             <select 
-            value={journal_mood.journal_mood}
+            value={journal_Mood.journal_mood}
             onChange={(e)=>setJournal_Mood(e.target.value)}>
                 <option value=""
                 disabled
