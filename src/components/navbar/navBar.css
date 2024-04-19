@@ -1,19 +1,33 @@
 .navBar {
-  display:flex;
-  width: 100vw;
-  justify-content: space-between;
-  background-color:rgb(17, 94, 148);
-  color: rgba(5, 5, 36, 0.955);
+  text-align: center;
+    background-color: 
+    #0792ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-  .navBar div {
-  display:grid;
-  flex-direction: column;
-  }
+  /* .navBar div {
+  display:flex;
+  flex-direction: column; */
+ 
   .navBar img{
     height: 150px;
     width: 300px;
+    align-items: left;
 
   }
   .nav {    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+   
+  }
+
+
+
+  .nav-link{
+    display: inline;
+
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+
   }

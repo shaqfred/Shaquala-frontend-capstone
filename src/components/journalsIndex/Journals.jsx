@@ -11,7 +11,14 @@ const API = import.meta.env.VITE_APP_API_URL
 
 export default function journals(){
 
+function getformatDate(){
+    
 
+    
+     let formatDate="2024-04-17T00:00:00.000Z"
+    //  "2024-04-17"
+    console.log(formatDate.slice(0, 10))        
+}
 
     const [allJournals, setAllJournals]= useState([])
 
@@ -50,6 +57,8 @@ export default function journals(){
                     )
                 })
             }
+            
         </div>
     )
+    
 }

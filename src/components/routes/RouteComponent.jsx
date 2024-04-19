@@ -6,7 +6,7 @@ import Error from "../../pages/Error.jsx"
 import Journals from "../../pages/Journals.jsx"
 import About from "../../pages/About.jsx"
 import Edit from "../../pages/Edit.jsx"
-import Search from "../../pages/SearchPage.jsx"
+
 
 
 import { Navigate } from "react-router-dom"
@@ -19,7 +19,7 @@ export default function RouteComponent (){
             <Route path="/journals/:id" element={<Show/>}/>
             <Route path="/journals/new" element={<New/>}/>
             <Route path="/journals/:id/edit" element={<Edit />}/>
-            <Route path="/journals" element={<Navigate to ="/journals/SearchPage"/>}/>
+            <Route path="/journals/searchs" element={<Navigate to ="/journals/Searchs"/>}/>
             <Route path="/journals/not-found" element={<Error />}/>
             <Route path="/journals/about" element={<About/>}/>
             <Route path="*" element={<Navigate to ="/journals/not-found"/>}/>

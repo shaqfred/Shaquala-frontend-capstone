@@ -11,6 +11,7 @@ function NavBar (){
                 <Link className="nav-link"to={"/"}>Home</Link>
                 <Link className="nav-link"to={"/journals"}>All Entries</Link>
                 <Link className="nav-link"to={"/journals/new"}>Add A Entry</Link>
+                <Link className="nav-link"to={"/journals/Search"}>Search Entries</Link>
                 <Link className="nav-link"to={"/journals/about"}>About the Developer </Link>
 
             </div>
