@@ -3,6 +3,7 @@
     background-color: 
     #0792ae;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
 }
