@@ -8,9 +8,10 @@ import "../journalsShow/journalShow.css"
 
 const API= import.meta.env.VITE_APP_API_URL
 
-
-
 export default function journalsShow(){
+
+    
+         
 
     const [journalDetails, setJournalDetails] = useState({})
 
@@ -23,7 +24,16 @@ export default function journalsShow(){
         .then (response => navigate(`/journals`))
         .catch (error => console.log (error))
     }
+    function getformatDate(formattedDate){
+   
+        console.log(formattedDate)  
+return formattedDate.slice(0, 10)
 
+       
+
+        }
+
+    
     useEffect(()=>{
         axios.get(`${API}/journalss/${id}`)
         .then (response => setJournalDetails(response.data))
@@ -31,17 +41,18 @@ export default function journalsShow(){
 
     },[id])
 
-    return(
-        <div className='card-column'>
-      
-          <div className=""> Mood: {journalDetails.journal_mood}</div>
-      
-            <div className=""> Entry: {journalDetails.journal_entry}</div>
-            <div className="">
 
-            <div className=""> Date: {journalDetails.entry_date}</div>
-            </div>
-          {/* <span>{journalDetails.journal_affirmations}</span> */}
+    return(
+        journalDetails.id &&
+        <div className='column'>
+      
+          <div className="column-a"> Mood: {journalDetails.journal_mood}</div>
+      
+            <div className="column-b"> Entry: {journalDetails.journal_entry}</div>
+           
+<div className="column-a"> Date: {getformatDate(journalDetails.entry_date)}</div>
+           
+            {/* <span>{journalDetails.journal_affirmations}</span>   */}
 
 
            
@@ -51,6 +62,7 @@ export default function journalsShow(){
                 <button onClick={()=> handleDelete()}>Delete</button> 
                          
         </div>
-    )
-}
+    
 
+    
+    )}

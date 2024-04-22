@@ -6,6 +6,8 @@ import Error from "../../pages/Error.jsx"
 import Journals from "../../pages/Journals.jsx"
 import About from "../../pages/About.jsx"
 import Edit from "../../pages/Edit.jsx"
+// import Search from "../../pages/SearchEntry.jsx"
+
 
 
 
@@ -19,7 +21,7 @@ export default function RouteComponent (){
             <Route path="/journals/:id" element={<Show/>}/>
             <Route path="/journals/new" element={<New/>}/>
             <Route path="/journals/:id/edit" element={<Edit />}/>
-            <Route path="/journals/searchs" element={<Navigate to ="/journals/Searchs"/>}/>
+            <Route path="/journals/Search" element={<Navigate to ="/journals/Search"/>}/>
             <Route path="/journals/not-found" element={<Error />}/>
             <Route path="/journals/about" element={<About/>}/>
             <Route path="*" element={<Navigate to ="/journals/not-found"/>}/>

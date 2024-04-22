@@ -1,19 +1,29 @@
-.card-column
+.column-b
      {    width: 60%;   
-         background: #169ca0;     
-         box-shadow: -10px 10px black;      
+          background: #169ca0;     
+          box-shadow: -10px 10px black;      
           display: flex;
+          flex-direction: row;
           height:fit-content;
-        
-        
+          margin: 20px;
+          border:  solid #ccc;
 
-       
-        margin: 20px;
-        border:  solid #ccc;
         
      }
+     .column-a{
+      width: 60%;   
+          background: #169ca0;     
+          box-shadow: -10px 10px black;      
+          display: flex;
+          flex-direction: column;
+          height:fit-content;
+          margin: 20px;
+          border:  solid #ccc;
+
+
+     }
      .button{
-     background-color: #007bff;
+      background-color: #007bff;
       border: solid 1px black;
       color:black;
       width: 60px;
@@ -27,6 +37,7 @@
         .card
         {    font-size: 20px;   
              margin-bottom: 10px;
+             justify-content: center;
             
            }
         .card p {    

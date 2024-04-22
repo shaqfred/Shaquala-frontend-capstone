@@ -1,12 +1,12 @@
 import React from "react";
-import Searchs from "../components/Searchs.jsx";
+import Search from "../components/searchEntry/Search.jsx"
 
 function SearchEntry(){
 
     return(
             <div>
        
-         <Searchs/>
+         <Search/>
          </div>
     )
 }
