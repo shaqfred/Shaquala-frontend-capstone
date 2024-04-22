@@ -5,15 +5,16 @@ import "./navBar.css"
 function NavBar (){
     return(
         <nav className="navBar">
-            <Link className="nav-link"to={"/"}>
-            < img src="https://trello.com/1/cards/65f92e9190ad46baa763a9a9/attachments/65f92f3085bd4df25f395459/previews/65f92f3085bd4df25f3954eb/download/image.png" className="img-url"/></Link>
-            <div>  
+              <Link className="nav-link"to={"/"}>
+            < img src="https://trello.com/1/cards/65f92e9190ad46baa763a9a9/attachments/65f92f3085bd4df25f395459/previews/65f92f3085bd4df25f3954eb/download/image.png" className="img-url"/></Link> 
+            
                 
                 <Link className="nav-link"to={"/journals"}>All Entries</Link>
                 <Link className="nav-link"to={"/journals/new"}>Add A Entry</Link>
                 <Link classNme="nav-link"to={"/journals/Search"}>Search Entries</Link>
                 <Link className="nav-link"to={"/journals/about"}>About the Developer </Link>
-
+              
+            <div>  
             </div>
             
     

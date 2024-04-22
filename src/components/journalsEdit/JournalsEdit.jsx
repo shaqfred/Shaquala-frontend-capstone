@@ -55,7 +55,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form className='card-column'
+        <form className='card'
         onSubmit={(event)=> handleSubmit(event)}>
              <label>Entry:
                 <textarea
@@ -83,7 +83,7 @@ function handleSubmit(event){
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
               
-            <div className='editForm-button-container'>
+            <div className='editForm-button'>
             <button type='submit' className='editForm-button'>Edit Changes</button>
              
            </div>

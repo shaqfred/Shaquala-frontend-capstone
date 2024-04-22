@@ -1,7 +1,7 @@
-.card-column
+.card
      {    width: 60%; 
           
-         background: #169ca0;     
+         
          box-shadow: -10px 10px black;      
           display: flex;
           height: 80px;
@@ -14,12 +14,21 @@
         border: 1px solid #ccc;
         
      }
-     button{
+     /* button{
      background: #007bff;
-      border: solid 1px black;
+      
       color:black;
       width: 60px;
-      font-weight: lighter;
+      font-weight: lighter; */
 
 
-     }
+     /* Style the submit button */
+  .editForm-button{
+    background-color: #a9bbcf;
+    border: solid 1px black;
+    padding: 10px 20px;
+    border:brown;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+  }

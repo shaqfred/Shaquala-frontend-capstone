@@ -4,12 +4,12 @@
     #0792ae;
     display: flex;
     
-    flex-direction: column;
-    align-items: center;
+    flex-direction:row;
+    align-items:center;
 }
-  /* .navBar div {
+   .navBar div {
   display:flex;
-  flex-direction: column; */
+  flex-direction: column; }
  
   .navBar img{
     height: 150px;
@@ -25,7 +25,7 @@
 
 
   .nav-link{
-    display: inline;
+    display:flexbox;
 
   text-align: center;
   padding: 12px 14px;

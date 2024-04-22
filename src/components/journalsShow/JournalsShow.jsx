@@ -40,11 +40,15 @@ return formattedDate.slice(0, 10)
         .catch(error => console.log(error))
 
     },[id])
+    
 
 
     return(
+        
         journalDetails.id &&
         <div className='column'>
+             
+           
       
           <div className="column-a"> Mood: {journalDetails.journal_mood}</div>
       
@@ -53,7 +57,6 @@ return formattedDate.slice(0, 10)
 <div className="column-a"> Date: {getformatDate(journalDetails.entry_date)}</div>
            
             {/* <span>{journalDetails.journal_affirmations}</span>   */}
-
 
            
 
