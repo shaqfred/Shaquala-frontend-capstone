@@ -55,7 +55,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form className='card'
+        <form className='edit-card'
         onSubmit={(event)=> handleSubmit(event)}>
              <label>Entry:
                 <textarea
@@ -67,12 +67,30 @@ function handleSubmit(event){
             </label>
 
            
-             <label>Mood:
-                <input
+             <label>Mood:<select  id="journal_mood" 
+            onChange={(e)=> handleTextInput(e)}>
+                {/* { <input 
                 type="text"
                 id="journal_mood"
                 value={editForm.journal_mood}
-                onChange={(event)=>handleTextInput(event)}/>
+                onChange={(event)=>handleTextInput(event)}/> */}
+                
+                 <option value="">--Choose--
+                 </option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="nonchalant">Nonchalant</option>
+            <option value="angry">Angry</option>
+            <option value="cringed">Cringed</option>
+            <option value="surprised">Surprised</option>
+            <option value="overwhelmed">Overwhelmed</option>
+            <option value="great">Great</option>
+            <option value="awesome">Awesome</option>
+            <option value="nervous">Nervous</option>
+            <option value="sick">Sick</option>
+            <option value="relieved">Relieved</option> 
+            <option value="confused">Confused</option>
+            </select>
             </label> 
            
             <label>Affirmation:
@@ -83,8 +101,8 @@ function handleSubmit(event){
                 onChange={(event)=>handleTextInput(event)}/>
             </label>
               
-            <div className='editForm-button'>
-            <button type='submit' className='editForm-button'>Edit Changes</button>
+            <div className='button'>
+            <button type='submit' className='button'>Edit Changes</button>
              
            </div>
             

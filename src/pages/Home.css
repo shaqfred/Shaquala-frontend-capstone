@@ -1,20 +1,21 @@
 
-  
+
 .home {
     font-size:xx-large;
-    background-color:#0a9ddc;
+    background-color:#2aa9df43;
     justify-content: center;
     font-weight:bolder;
     font-family:serif;
     
-  background-image:url(https://wallpapercave.com/wp/wp5518760.jpg);
+    
+  /* background-image:url(https://wallpapercave.com/wp/wp5518760.jpg); */
   
    color: rgb(251, 251, 253);
 
 } 
 .home h2{
   width: 70%;
-  background-color: #0057b3;
+
   text-align: center;
   margin: 0 auto;
   padding: 5px;
