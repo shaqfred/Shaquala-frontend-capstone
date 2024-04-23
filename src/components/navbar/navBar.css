@@ -3,42 +3,43 @@
   /* background-color:  #0792ae; */
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
-   
+
 .navBar div {
-  display:flex;
-  flex-direction: column; 
-}
- 
-.navBar img{
-    height: 150px;
-    width: 300px;
-    align-items: left;
-
-}
-  
-.navBar {    
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-  font-size:xx-large;
-   
+  display: flex;
+  flex-direction: column;
 }
 
+.navBar img {
+  height: 150px;
+  width: 300px;
+  align-items: left;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
 
+.navBar {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
+  font-size: xx-large;
+}
 
-.nav-link{
-  display:flexbox;
+.nav-link {
+  display: flexbox;
   text-align: center;
   padding: 12px 14px;
   text-decoration: none;
-
 }
 
 .nav-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+
   width: 100%;
 }
 
@@ -46,6 +47,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   width: 100%;
 }

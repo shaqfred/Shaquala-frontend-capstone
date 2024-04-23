@@ -13,7 +13,7 @@ function NavBar (){
             </section>
             <section className="nav-sub">
                 <Link className="nav-link"to={"/journals"}>All Entries</Link>
-                <Link className="nav-link"to={"/journals/new"}>Add A Entry</Link>
+                <Link className="nav-link"to={"/journals/new"}>Create A Entry</Link>
                 <Link classNme="nav-link"to={"/journals/Search"}>Search Entries</Link>
                 <Link className="nav-link"to={"/journals/about"}>About the Developer </Link>
             </section>

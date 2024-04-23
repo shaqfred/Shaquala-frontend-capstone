@@ -1,24 +1,23 @@
-.card-column
-     {    width: 60%; 
-          
-         font-size: x-large;
-          box-shadow: -10px 10px black;      
-          display: flex;
-          flex-direction: row;
-          height: 80px;
-          margin: 20px;
-          /* border: 1px solid #ccc; */
-        
-     }
-      button{
-     background: #007bff;
-      
-      color:black;
-      width: 60px;
-      font-weight: lighter; }
+.card-column {
+  width: 60%;
 
+  font-size: x-large;
+  box-shadow: -10px 10px black;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin: 20px;
+  /* border: 1px solid #ccc; */
+}
+.button {
+  background-color: #007bff;
+  border: solid 1px black;
+  color: black;
+  width: 100px;
+  font-weight: lighter;
+}
 
-     /* Style the submit button
+/* Style the submit button
   .button{
     background-color: #a9bbcf;
     border: solid 1px black;

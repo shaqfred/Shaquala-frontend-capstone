@@ -10,7 +10,11 @@
   margin: auto;
   padding: 0;
 }
-card-body {
+card-body div {
   justify-content: center;
   background-color: #fa709f;
+  text-align: center;
+}
+h2 {
+  text-align: center;
 }

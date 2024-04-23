@@ -1,74 +1,65 @@
-
-
 .home {
-    font-size:xx-large;
-    background-color:#2aa9df43;
-    justify-content: center;
-    font-weight:bolder;
-    font-family:serif;
-    
-    
-  /* background-image:url(https://wallpapercave.com/wp/wp5518760.jpg); */
-  
-   color: rgb(251, 251, 253);
+  font-size: xx-large;
+  background-color: #2aa9df43;
+  justify-content: center;
+  font-weight: bolder;
+  font-family: serif;
 
-} 
-.home h2{
+  /* background-image:url(https://wallpapercave.com/wp/wp5518760.jpg); */
+
+  color: rgb(251, 251, 253);
+}
+.home h2 {
   width: 70%;
 
   text-align: center;
   margin: 0 auto;
   padding: 5px;
-  font-size:xx-large;
+  font-size: xx-large;
 }
-  
-    
-    
-   
 
-h1{
+h1 {
   text-align: center;
 }
-h2{
+h2 {
   text-align: right;
   justify-content: right;
 }
- /* Style labels */
-  label {
-    display: block;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  /* Style input fields */
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    
-  }
-  
-  /* Style the submit button */
-  button[type="submit"] {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    border:brown;
-    border-radius: 3px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  /* Style the submit button on hover */
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  .img{
-    width: 200px;
-    height: auto;
-  }
-  
-  /* .home{
+/* Style labels */
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Style input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: brown;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.img {
+  width: 200px;
+  height: auto;
+}
+
+/* .home{
     background-color: rgb(2, 85, 85);
   } */

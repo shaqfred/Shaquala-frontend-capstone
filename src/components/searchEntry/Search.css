@@ -1,25 +1,19 @@
-/* .card-column
-     {    width: 60%; 
-          
-         background: #169ca0;     
-         box-shadow: -10px 10px black;      
-          display: flex;
-          height: 80px;
+.card-column {
+  width: 60%;
 
-        
-        
+  background: #169ca0;
+  box-shadow: -10px 10px black;
+  display: flex;
+  height: 80px;
 
-       
-        margin: 20px;
-        border: 1px solid #ccc;
-        
-     }
+  margin: 20px;
+  border: 1px solid #ccc;
+
+  /* }
       /* button{
      background: #007bff;
       border: solid 1px black;
       color:black;
       width: 60px;
       font-weight: lighter; */
-
-
-     
+}
