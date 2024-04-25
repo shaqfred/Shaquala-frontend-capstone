@@ -15,7 +15,7 @@ export default function EditForm() {
         
         
     })
-    const  navigate = useNavigate()
+    const navigate =useNavigate()
 
     function handleTextInput (event){
         const id = event.target.id;
@@ -64,7 +64,7 @@ function handleSubmit(event){
                 value={editForm.journal_entry}
                 onChange={(event)=> handleTextInput(event)}
                 />
-            </label>
+            </label >
 
            
              <label>Mood:<select  id="journal_mood" 
@@ -102,7 +102,7 @@ function handleSubmit(event){
             </label>
               
             <div className='button'>
-            <button type='submit' className='button'>Edit Changes</button>
+            <button type='submit'className='button'>Edit</button>
              
            </div>
             

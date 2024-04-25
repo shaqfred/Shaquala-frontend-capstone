@@ -50,11 +50,11 @@ return formattedDate.slice(0, 10)
              
            
       
-          <div className="column-a"> Mood: {journalDetails.journal_mood}</div>
+          <div className='column-a'> Mood: {journalDetails.journal_mood}</div>
       
-            <div className="column-b"> Entry: {journalDetails.journal_entry}</div>
+            <div className='column-b'> Entry: {journalDetails.journal_entry}</div>
            
-<div className="column-a"> Date: {getformatDate(journalDetails.entry_date)}</div>
+<div className='column-a'> Date: {getformatDate(journalDetails.entry_date)}</div>
            
             {/* <span>{journalDetails.journal_affirmations}</span>   */}
 

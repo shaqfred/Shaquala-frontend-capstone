@@ -1,19 +1,19 @@
 .card-column {
-  width: 60%;
-
-  background: #169ca0;
+  width: 500px;
+  background: #fa709f;
+  /* background: #FFD700; */
+  /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
+  border: 8px;
+  height: 280px;
   box-shadow: -10px 10px black;
+  margin-top: 20px;
+  justify-content: space-around;
+  color: black;
   display: flex;
-  height: 80px;
+  flex-direction: 2 column;
 
-  margin: 20px;
+  flex: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
   border: 1px solid #ccc;
-
-  /* }
-      /* button{
-     background: #007bff;
-      border: solid 1px black;
-      color:black;
-      width: 60px;
-      font-weight: lighter; */
 }
