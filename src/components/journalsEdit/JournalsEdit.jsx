@@ -57,16 +57,6 @@ function handleSubmit(event){
     return (
         <form className='edit-card'
         onSubmit={(event)=> handleSubmit(event)}>
-             <label>Entry:
-                <textarea
-                type="textarea"
-                id="journal_entry"
-                value={editForm.journal_entry}
-                onChange={(event)=> handleTextInput(event)}
-                />
-            </label >
-
-           
              <label>Mood:<select  id="journal_mood" 
             onChange={(e)=> handleTextInput(e)}>
                 {/* { <input 
@@ -92,14 +82,22 @@ function handleSubmit(event){
             <option value="confused">Confused</option>
             </select>
             </label> 
+            <label>Entry:
+                <textarea
+                type="textarea"
+                id="journal_entry"
+                value={editForm.journal_entry}
+                onChange={(event)=> handleTextInput(event)}
+                />
+            </label>
            
-            <label>Affirmation:
+            {/* <label>Affirmation:
                 <input
                 type="text"
                 id="journal_affirmation"
                 value={editForm.journal_affirmation}
                 onChange={(event)=>handleTextInput(event)}/>
-            </label>
+            </label> */}
               
             <div className='button'>
             <button type='submit'className='button'>Edit</button>

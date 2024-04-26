@@ -46,9 +46,9 @@ return formattedDate.slice(0, 10)
     return(
         
         journalDetails.id &&
-        <div className='column'>
+        <div className='show-card'>
              
-           
+          <div className="card_container"></div> 
       
           <div className='column-a'> Mood: {journalDetails.journal_mood}</div>
       
