@@ -78,12 +78,11 @@ export default function NewForm() {
       <form className="card-column" onSubmit={handleSubmit}>
         <label>
           Mood:
-          <select id="journal_mood" onChange={(e) => handleMoodChange(e)}>
-            {/* <input
-                type="text"
-                id="number"
-                value={form.journal_mood}
-                 onChange={(event)=>handleTextChange(event)}/> */}
+          <select id="journal_mood" value={form.journal_mood}
+                 onChange={(event)=>{handleTextChange(event)
+                 setMood(event.target.value.toLowerCase())}}>
+             
+                 
             <option value="">-- Choose--</option>
             <option value="happy">Happy</option>
             <option value="sad">Sad</option>

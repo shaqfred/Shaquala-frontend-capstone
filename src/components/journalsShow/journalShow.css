@@ -49,6 +49,9 @@ div.column-a {
 div.button {
   border: 2px solid #945c86;
   border-radius: 5px;
+  width: 15%;
+  height: 15%;
+  text-align: justify;
 
   color: #8006a9;
   cursor: pointer;
