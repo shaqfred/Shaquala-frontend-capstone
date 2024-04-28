@@ -1,22 +1,37 @@
 .newForm {
+  display: flex;
+  justify-content: center;
   font-family: Arial, sans-serif;
+
+  margin-top: 20px;
 }
 
-.card-column {
-  width: 800px;
+.newForm-card-column {
+  width: 500px;
+  height: 500px;
 
   background: rgb(193, 218, 240);
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);     */
   border: 1px solid black;
+  justify-items: center;
+  row-gap: 30px;
 
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+  display: grid;
+
+  /* margin-bottom: 10px;
 
   flex: 6;
-  padding: 50px;
+  padding: 50px; */
   border: 6px solid #ccc;
+}
+.newForm label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.newForm textarea {
+  height: 150px;
+  width: 300px;
 }
 
 .card h1 {

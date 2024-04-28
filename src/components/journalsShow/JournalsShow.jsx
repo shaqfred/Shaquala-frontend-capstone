@@ -35,22 +35,25 @@ export default function journalsShow() {
     journalDetails.id && (
     
       <section className="centered">
-        <div className="card_container"></div>
-        <div className="column-a">
+         <div className="card_container"> 
+        <div className="card_container_date">
           {" "}
-          Date: {getformatDate(journalDetails.entry_date)}
+          <b>Date:</b> {getformatDate(journalDetails.entry_date)}
         </div>
 
-        <div className="column-a"> Mood: {journalDetails.journal_mood}</div>
+        <div className="card_container_mood"><b> Mood:</b> {journalDetails.journal_mood}</div>
 
-        <div className="column-b"> Entry: {journalDetails.journal_entry}</div>
+        <div className="card_container_entry"><b>Entry:</b> {journalDetails.journal_entry}</div>
 
         {/* <span>{journalDetails.journal_affirmations}</span>   */}
 
-        <div className="button">
+        <div className="card_container_button">
           <button onClick={() => navigate(`/journals/${id}/edit`)}>Edit</button>
+          <button onClick={() => handleDelete()}>Delete</button>
         </div>
-        <button onClick={() => handleDelete()}>Delete</button>
+
+        
+        </div>
       </section>
     )
   );

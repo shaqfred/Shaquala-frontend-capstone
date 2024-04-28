@@ -1,4 +1,13 @@
 .home {
+  display: grid;
+  grid-template-rows: 20vh 30vh 10vh;
+  /* row-gap: 50px; */
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  background-size: cover;
   font-size: xx-large;
   /* background-color: #2aa9df43; */
   justify-content: center;
@@ -8,22 +17,6 @@
   background-image: url("https://64.media.tumblr.com/ed50489dd4b4c72b707b662d3ff9cb3d/4824bc4a648c5428-d3/s500x750/bd1dac7d9a23d1e0945d66c1d655101e7b331d12.gif");
 }
 
-.home h2 {
-  width: 70%;
-
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px;
-  font-size: xx-large;
-}
-
-h1 {
-  text-align: center;
-}
-h2 {
-  text-align: right;
-  justify-content: right;
-}
 /* Style labels */
 label {
   display: block;
@@ -61,3 +54,5 @@ button[type="submit"]:hover {
 
 /* .home {
   background-color: rgb(2, 85, 85); */
+
+/* background: #fa709f; */
