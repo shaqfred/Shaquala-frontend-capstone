@@ -1,14 +1,13 @@
 .home {
   font-size: xx-large;
-  background-color: #2aa9df43;
+  /* background-color: #2aa9df43; */
   justify-content: center;
   font-weight: bolder;
   font-family: serif;
-
-  /* background-image:url(https://wallpapercave.com/wp/wp5518760.jpg); */
-
-  color: rgb(251, 251, 253);
+  color: rgb(250, 246, 249);
+  background-image: url("https://64.media.tumblr.com/ed50489dd4b4c72b707b662d3ff9cb3d/4824bc4a648c5428-d3/s500x750/bd1dac7d9a23d1e0945d66c1d655101e7b331d12.gif");
 }
+
 .home h2 {
   width: 70%;
 
@@ -60,6 +59,5 @@ button[type="submit"]:hover {
   height: auto;
 }
 
-/* .home{
-    background-color: rgb(2, 85, 85);
-  } */
+/* .home {
+  background-color: rgb(2, 85, 85); */

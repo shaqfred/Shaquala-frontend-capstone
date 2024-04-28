@@ -118,7 +118,7 @@ export default function NewForm() {
    
 </label> */}
 
-        {affirmation && <p>Journalfly: {affirmation}</p>}
+        {/* {affirmation && <p>Journalfly: {affirmation}</p>} */}
 
         <div className="form-button-container">
           <button type="submit" className="form-button">

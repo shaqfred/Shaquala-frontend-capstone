@@ -55,7 +55,7 @@ function handleSubmit(event){
 }
 
     return (
-        <form className='edit-card'
+        <form className='card-column'
         onSubmit={(event)=> handleSubmit(event)}>
              <label>Mood:<select  id="journal_mood" 
             onChange={(e)=> handleTextInput(e)}>
@@ -91,14 +91,14 @@ function handleSubmit(event){
                 />
             </label>
            
-            {/* <label>Affirmation:
+             {/* <label>
                 <input
                 type="text"
                 id="journal_affirmation"
                 value={editForm.journal_affirmation}
                 onChange={(event)=>handleTextInput(event)}/>
-            </label> */}
-              
+            </label> 
+               */}
             <div className='button'>
             <button type='submit'className='button'>Edit</button>
              

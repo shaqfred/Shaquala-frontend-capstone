@@ -43,10 +43,13 @@ return(dateStr.slice(0, 10))
                         <Link to={`/journals/${journalsObj.id}`}>
                           
                             <div className='card-column'>
-                                <div className='column-b'>Entry: {journalsObj.journal_entry}</div>
+                                
                                  
                             <div className='column-a'>Mood: {journalsObj.journal_mood}</div>
+
                             <div className='column-a'> Date: {getformatDate(journalsObj.entry_date)}</div>
+
+                            {/* <div className='column-b'>Entry: {journalsObj.journal_entry}</div> */}
                             {/* <span>{journalsObj.journal_affirmation}</span> */}
                            
                             </div> 

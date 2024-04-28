@@ -1,12 +1,12 @@
-.edit-card {
+.card-column {
   width: 100px;
   vertical-align: text-top;
-  background: #fa709f;
+  background: #70bcfa;
   /* background: #FFD700; */
-  /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
+  box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);
   border: 8px;
   height: 280px;
-  box-shadow: -10px 10px black;
+  /* box-shadow: -10px 10px black; */
   margin-top: 20px;
   justify-content: space-around;
   color: black;
@@ -37,7 +37,7 @@
   width: 100px;
   font-weight: lighter;
 } */
-.edit-button {
+div.button {
   background-color: #a9bbcf;
   border: solid 2px black;
   padding: 10px 20px;

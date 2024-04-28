@@ -4,21 +4,21 @@
   /* background: #FFD700; */
   /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
   border: 8px;
-  height: 280px;
+  height: 600px;
   box-shadow: -10px 10px black;
   margin-top: 20px;
   justify-content: space-around;
   color: black;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 20px;
 
   flex: 2px;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
   border: 1px solid #ccc;
 }
-.column-b {
+div.column-b {
   width: 100%;
   background: #eff8f8f2;
   box-shadow: -10px 10px black;
@@ -28,7 +28,7 @@
   margin: 20px;
   border: solid #ccc;
 }
-.column-a {
+div.column-a {
   width: 40%;
   background: #e1f4f5;
   box-shadow: -10px 10px black;
@@ -38,7 +38,7 @@
   margin: 20px;
   border: solid #ccc;
 }
-.button {
+div.button {
   background-color: #007bff;
   border: solid 1px black;
   color: black;

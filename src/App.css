@@ -1,11 +1,15 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    /* background-image: linear-gradient(#A74CF2, #3963D7); */
-    background-image: linear-gradient(to bottom right, red, yellow);
-    background-repeat: no-repeat;
-    margin: 0;
-    background-attachment: fixed;
-    height: 100%;
+  /* background-image: linear-gradient(#A74CF2, #3963D7); */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(139, 5, 183),
+    rgba(0, 225, 255, 0.617)
+  );
+  background-repeat: no-repeat;
+  margin: 0;
+  background-attachment: fixed;
+  height: 100%;
 }

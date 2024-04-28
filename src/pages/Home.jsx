@@ -18,7 +18,7 @@ function HomePage(){
 
             <h2>Welcome To Journalfy</h2>
             <h2>"Self-Awareness, Self-Check in, Self-Care,</h2>
-            <h2>and all in your pocket!"</h2>
+            <h2>and all on your screen!"</h2>
               
          
         </div>
