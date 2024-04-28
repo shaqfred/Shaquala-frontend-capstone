@@ -33,7 +33,8 @@ export default function journalsShow() {
 
   return (
     journalDetails.id && (
-      <div className="card-column">
+    
+      <section className="centered">
         <div className="card_container"></div>
         <div className="column-a">
           {" "}
@@ -50,7 +51,7 @@ export default function journalsShow() {
           <button onClick={() => navigate(`/journals/${id}/edit`)}>Edit</button>
         </div>
         <button onClick={() => handleDelete()}>Delete</button>
-      </div>
+      </section>
     )
   );
 }
