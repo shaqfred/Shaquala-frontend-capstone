@@ -74,8 +74,8 @@ export default function NewForm() {
   }
 
   return (
-    <div>
-      <form className="card-column" onSubmit={handleSubmit}>
+    <div className="newForm">
+      <form className="newForm-card-column" onSubmit={handleSubmit}>
         <label>
           Mood:
           <select id="journal_mood" value={form.journal_mood}
@@ -121,7 +121,7 @@ export default function NewForm() {
 
         <div className="form-button-container">
           <button type="submit" className="form-button">
-            New Entry
+            Post Entry
           </button>
         </div>
 
