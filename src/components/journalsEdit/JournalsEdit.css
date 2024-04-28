@@ -8,7 +8,7 @@
   height: 280px;
   box-shadow: -10px 10px black;
   margin-top: 20px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: black;
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +24,7 @@
 
   font-size: x-large;
   box-shadow: -10px 10px black;
-  display: flex;
+  display: grid;
   flex-direction: row;
   height: 80px;
   margin: 20px;

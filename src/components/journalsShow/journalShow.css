@@ -1,6 +1,5 @@
 .card-row {
-  /* width: 500px; */
-  background: #c9718f;
+  width: 800px;
   /* background: #FFD700; */
   /* box-shadow: 0 4px 6px rgba(2, 2, 2, 0.1);     */
   border: 8px;
@@ -9,7 +8,10 @@
   margin-top: 20px;
   justify-content: space-around;
   color: black;
-  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(800px, 3fr));
+  grid-gap: 20px;
+
   /* flex-wrap: wrap; */
   /* margin: 20px; */
   /* 
