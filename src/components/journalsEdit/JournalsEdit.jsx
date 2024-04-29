@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./JournalsEdit.css"
 
 const API = import.meta.env.VITE_APP_API_URL;
 
@@ -46,7 +47,9 @@ export default function EditForm() {
   }
 
   return (
-    <form className="card-column" onSubmit={(event) => handleSubmit(event)}>
+    <div className="editForm">
+    <form className="editForm-card-container" onSubmit={(event) => handleSubmit(event)}>
+
       <label>
         Mood:
         <select
@@ -95,11 +98,12 @@ export default function EditForm() {
                 onChange={(event)=>handleTextInput(event)}/>
             </label> 
                */}
-      <div className="button">
-        <button type="submit" className="button">
+      <div className="editForm-button-container">
+        <button type="submit" className="editForm-button">
           Edit
         </button>
       </div>
     </form>
+    </div>
   );
 }
