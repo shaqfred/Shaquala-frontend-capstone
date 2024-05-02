@@ -1,16 +1,17 @@
 .about {
-  /* background-image: url(https://wallpapercave.com/wp/wp4600603.jpg); */
+  /* background-image: url(https://wallpapercave.com/wp/wp4600603.jpg);  */
   background-size: auto;
   color: rgb(1, 8, 14);
-  font-size: x-large;
+  font-size: xx-large;
   justify-content: center;
+  text-align: center;
 }
 .btn btn-primary {
   color: rgb(2, 2, 85);
   margin: auto;
   padding: 0;
 }
-card-body div {
+.card div {
   justify-content: center;
   background-color: #fa709f;
   text-align: center;
